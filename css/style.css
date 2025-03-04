@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background: rgb(74, 197, 255);
+    background: linear-gradient(0deg, rgba(74, 197, 255, 1) 0%, rgb(214, 209, 255) 100%);
+    transition: background .3s;
+}
+
+h1 {
+    text-transform: uppercase;
+    color: rgb(255, 255, 93);
+    font-size: 80px;
+    cursor: pointer;
+}
+
+.space {
+    width: 200px;
+    height: 200px;
+}
+
+.space path {
+    fill: rgb(255, 255, 93);
+}
+
+
+#container.night {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(0, 212, 255, 1) 100%);
+}
+
+#container.night h1 {
+    color: yellow;
+}
