@@ -1,0 +1,127 @@
+@media screen and (max-width: 1900px) {
+    .hero .rel, header .rel {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    .hero .rel {
+        justify-content: space-evenly;
+    }
+    .tit_wrap {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1600px) {
+    header .rel {
+        width: 100%;
+        padding: 2rem 0;
+    }
+    .rel h1, .nav_list {
+        padding: 0 20px;
+    }
+    .hero .rel {
+        width: 100%;
+        padding: 20px;
+        justify-content: space-evenly;
+    }
+    header {
+        padding: 0 2rem;
+    }
+}
+@media screen and (max-width: 1300px ) {
+    .rel h1 {
+        padding: 0;
+    }
+    .hero .tit_wrap h2 {
+        font-size: 7rem;
+        margin-bottom: 2rem;
+    }
+    .hero .tit_wrap p {
+        display: none;
+    }
+    .hero_btn {
+        padding: 0.5rem 1rem;
+    }
+    .hero .img_wrap {
+        transform: translateX(0);
+    }
+    .card {
+        width: 186px;
+        height: 285px;
+    }
+    .card_wrap {
+        gap: 2rem;
+    }
+    .card_t_wrap{
+        width: 186px;
+        height: 99px;
+    }
+    .card_t_wrap p.txt {
+        font-size: 9px;
+    }
+    .card_t_wrap h4 {
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 1150px) {
+    .rel h1 {
+        padding: 0;
+    }
+    header .nav_list {
+        display: none;
+    }
+    .hero .rel {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10rem;
+    }
+    .tit_wrap {
+        justify-items: center;
+        order: 1;
+    }
+    .card_wrap {
+        justify-content: center;
+    }
+    section.hero::after {
+        transform: translateY(-76%);
+    }
+    .card_arr.left {
+        left: 9rem;
+    }
+    .card_arr.right {
+        right: 9rem;
+    }
+}
+@media screen and (max-width:620px) {
+    .rel h1 {
+        padding: 0;
+    }
+    .card_wrap li+li {
+        display: none;
+    }
+    .card_arr.left {
+        left: 30rem;
+    }
+    .card_arr.right {
+        right: 30rem;
+    }
+}
+@media screen and (max-width:463px) {
+    .rel h1 {
+        padding: 0;
+    }
+    .hero .tit_wrap h2 {
+        font-size: 7rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    .card_arr.left {
+        left: 30rem;
+    }
+    .card_arr.right {
+        right: 30rem;
+    }
+    section.hero::after {
+        transform: translateY(-98%);
+    }
+}
