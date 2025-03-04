@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#wrap {
+    background: linear-gradient(90deg,rgb(156, 156, 255) 25%, rgb(255, 82, 82) 75%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+}
+
+ul.menu li {
+    width: 100px;
+    height: 100px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+ul.menu li span {
+    font-size: 0;
+}
+
+ul.menu li.act {
+    background-color: #000;
+    color: #fff;
+}
+
+ul.menu li.act span {
+    color: yellow;
+    font-size: 100%;
+}
+
+ul.menu li:nth-child(1) {
+    border-radius: 2rem 0 0 0 ;
+}
+
+ul.menu li:nth-child(4) {
+    border-radius: 0 0 0 2rem;
+}
+
+.content-wrap {
+    position: relative;
+    width: 600px;
+    height: 430px;
+}
+
+.content-wrap .content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    z-index: 0;
+    opacity: 0;
+    border-radius: 0 2rem 2rem 0;
+    background-color: plum;
+    gap: 20px;
+    color: #fff;
+}
+.content-wrap .content:nth-child(1) {
+    background-color: #6b6b6b;
+}
+.content-wrap .content:nth-child(2) {
+    background-color: rgb(42, 156, 47);
+}
+.content-wrap .content:nth-child(3) {
+    background-color: rgb(158, 103, 36);
+}
+.content-wrap .content:nth-child(4) {
+    background-color: rgb(36, 38, 158);
+}
+
+.content-wrap .content_On {
+    opacity: 1;
+    z-index: 1;
+}
+
+.content-wrap .content h2 {
+    font-size: 55px;
+}
+
+.content-wrap .content .cont-btn {
+    display: inline-block;
+    color: #000;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.content-wrap .content p {
+    max-width: 50%;
+}
+
